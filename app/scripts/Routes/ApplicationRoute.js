@@ -13,6 +13,7 @@ Webster.ApplicationRoute = Ember.Route.extend({
      * @method setupController
      */
     setupController: function() {
-
+        // @todo should be moved anywhere else with configurable host and path
+        Webster.Socket.connect('127.0.0.1:8589', 'webstershop/socket');
     }
 });

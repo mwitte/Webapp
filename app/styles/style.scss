@@ -1,0 +1,8 @@
+// overwrite fonts path for bootstrap
+$icon-font-path: "../fonts/";
+
+@import "bower_components/twbs-bootstrap-sass/vendor/assets/stylesheets/bootstrap";
+
+#mainContent {
+  margin-top: 70px;
+}

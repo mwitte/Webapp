@@ -1,0 +1,1 @@
+Webster.ApplicationAdapter = DS.FixtureAdapter;

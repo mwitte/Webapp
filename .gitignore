@@ -1,0 +1,11 @@
+.DS_Store
+/.idea
+/.sass-cache
+/.tmp
+/node_modules
+/temp
+/dist
+/app/bower_components
+/app/scripts/LocalProperties.js
+/coverage
+/doc/api

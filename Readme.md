@@ -1,5 +1,7 @@
 # WebsterShop Webapp #
 
+[![Build Status](https://travis-ci.org/WebsterShop/Webapp.png?branch=master)](https://travis-ci.org/WebsterShop/Webapp)
+
 Currently under heavy development.
 
 ### Build ###

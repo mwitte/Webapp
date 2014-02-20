@@ -7,6 +7,10 @@
  */
 Webster.ApplicationController = Ember.ArrayController.extend({
 
+    updateCurrentPath: function() {
+        Webster.set('currentPath', this.get('currentPath'));
+    }.observes('currentPath'),
+
     actions: {
     }
 });

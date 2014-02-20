@@ -97,6 +97,17 @@ Webster.Socket = Ember.Object.create({
      * @param message
      */
     onMessage: function(message) {
-        console.dir(message);
+        var msgObj;
+        try{
+            msgObj = JSON.parse(message.data);
+        }catch(e){}
+
+        if(msgObj && msgObj.type === 'ProductCollection'){
+            var products = Ember.A();
+            for(var i=0; i < msgObj.content.length; i++){
+                products.addObject(Ember.Object.create(msgObj.content[i]))
+            }
+            Webster.Session.set('productCollection', products);
+        }
     }
 });

@@ -21,3 +21,13 @@ require('scripts/Routes/*');
 require('scripts/Components/*');
 require('scripts/Views/*');
 require('scripts/Router');
+
+
+Array.prototype.chunk = function(chunkSize) {
+    var array=this;
+    return [].concat.apply([],
+        array.map(function(elem,i) {
+            return i%chunkSize ? [] : [array.slice(i,i+chunkSize)];
+        })
+    );
+};
